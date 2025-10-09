@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 技术博客
-subtitle: "𝐼 𝒹𝑜𝓃'𝓉 𝓃𝑒𝑒𝒹 𝓉𝒽𝑒 𝒾𝓃𝓉𝑒𝓇𝓃𝑒𝓉, 𝓉𝒽𝑒 𝒾𝓃𝓉𝑒𝓇𝓃𝑒𝓉 𝓃𝑒𝑒𝒹𝓈 𝓂𝑒."
-description: '一个专注于技术分享的个人博客'
-keywords: 技术,编程,开发,博客
-author: 技术博主
-language: zh-CN
+title: Tech Blog
+subtitle: ''
+description: 'A personal blog focused on technology sharing'
+keywords: technology,programming,development,blog
+author: Tech Blogger
+language: en
 timezone: 'Asia/Shanghai'
 
 # URL

@@ -1,0 +1,93 @@
+/* 字体渲染优化 - 防止花体字符乱码 */
+
+/* 全局字体优化 */
+@font-face {
+  font-family: 'system-ui';
+  font-display: swap;
+  src: local('system-ui');
+}
+
+/* 确保Unicode字符正确渲染 */
+* {
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 针对花体字符的特殊优化 */
+.subtitle, .slogan, [class*="subtitle"], [class*="slogan"] {
+  font-display: swap !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  /* 防止字符在加载时闪烁 */
+  opacity: 0;
+  animation: fadeInText 0.3s ease-in-out 0.1s forwards;
+}
+
+/* 淡入动画，避免乱码闪现 */
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 确保特殊Unicode字符的字体回退 */
+.subtitle, .slogan, [class*="subtitle"], [class*="slogan"] {
+  font-family: 
+    "Apple Color Emoji",
+    "Segoe UI Emoji", 
+    "Noto Color Emoji",
+    "Segoe UI Symbol",
+    "Android Emoji",
+    "EmojiSymbols",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+}
+
+/* 预加载关键字符 */
+.preload-unicode::before {
+  content: "𝐼 𝒹𝑜𝓃'𝓉 𝓃𝑒𝑒𝒹 𝓉𝒽𝑒 𝒾𝓃𝓉𝑒𝓇𝓃𝑒𝓉, 𝓉𝒽𝑒 𝒾𝓃𝓉𝑒𝓇𝓃𝑒𝓉 𝓃𝑒𝑒𝒹𝓈 𝓂𝑒";
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 强制浏览器正确处理Unicode */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* 防止FOIT (Flash of Invisible Text) */
+@supports (font-display: swap) {
+  * {
+    font-display: swap;
+  }
+}
+
+/* 额外的字体加载优化 */
+body {
+  font-display: swap;
+}
+
+/* 针对Fluid主题的特定选择器 */
+.banner .banner-text .subtitle,
+.index .slogan .text,
+.banner-text .subtitle {
+  font-display: swap !important;
+  will-change: opacity;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
