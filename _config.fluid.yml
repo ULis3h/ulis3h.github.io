@@ -3,7 +3,7 @@
 
 # Navigation bar
 navbar:
-  blog_title: "Tech Blog"
+  blog_title: "ULis's Blog"
   menu:
     - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
     - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
@@ -19,7 +19,7 @@ index:
   post_default_img: /img/background.jpg
   slogan:
     enable: true
-    text: "I don't need the internet, the internet needs me"
+    text: "ℐ 𝒹ℴ𝓃'𝓉 𝓃ℯℯ𝒹 𝓉𝒽ℯ 𝒾𝓃𝓉ℯ𝓇𝓃ℯ𝓉, 𝓉𝒽ℯ 𝒾𝓃𝓉ℯ𝓇𝓃ℯ𝓉 𝓃ℯℯ𝒹𝓈 𝓂ℯ."
     api:
       enable: false
 
