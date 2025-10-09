@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Learn HNSW
+date: 2025-01-05 00:00:00
 subtitle: There's lots to learn!
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
