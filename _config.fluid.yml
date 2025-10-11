@@ -1,6 +1,8 @@
 # Fluid theme configuration file
 # For detailed configuration, please refer to: https://hexo.fluid-dev.com/docs/guide/
 
+favicon: /img/icons.png
+
 # Navigation bar
 navbar:
   blog_title: "ULis's Blog"
@@ -19,7 +21,7 @@ index:
   post_default_img: /img/background.jpg
   slogan:
     enable: true
-    text: "ℐ 𝒹ℴ𝓃'𝓉 𝓃ℯℯ𝒹 𝓉𝒽ℯ 𝒾𝓃𝓉ℯ𝓇𝓃ℯ𝓉, 𝓉𝒽ℯ 𝒾𝓃𝓉ℯ𝓇𝓃ℯ𝓉 𝓃ℯℯ𝒹𝓈 𝓂ℯ."
+    text: "𝓘 𝓭𝓸𝓷'𝓽 𝓷𝓮𝓮𝓭 𝓽𝓱𝓮 𝓲𝓷𝓽𝓮𝓻𝓷𝓮𝓽, 𝓽𝓱𝓮 𝓲𝓷𝓽𝓮𝓻𝓷𝓮𝓽 𝓷𝓮𝓮𝓭𝓼 𝓶𝓮"
     api:
       enable: false
 
@@ -64,7 +66,7 @@ about:
   banner_img: /img/background.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
-  avatar: /img/avatar.png
+  avatar: https://github.com/ulis3h.png?size=180
   name: "ULis3h"
   introduce: "Software Engineer & Technology Enthusiast | Passionate about database internals, system architecture, and open source development"
   icons:
